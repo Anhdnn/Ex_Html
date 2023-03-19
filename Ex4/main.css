@@ -1,0 +1,109 @@
+@media only screen and (min-width : 320px) and (max-device-width : 480px) {
+    .section{
+        width: 95%;
+        margin: 8px;
+        border-bottom: 1px solid black;
+    }
+
+    .img__sml{
+        width: 100%;
+        background-color: rgba(76, 163, 239, 0.638);
+        text-align: center;
+        height: 100px;
+        margin: 8px 8px 8px 0;
+    }
+
+    .img__sml-span{
+        display: inline-block;
+        margin: 35px auto;
+    }
+
+    .img__lrg-span{
+        display: inline-block;
+        margin: 35px auto;
+    }
+
+    .wrap__content{
+        display: flex;
+        margin: 0 10px 10px 10px;
+    }
+
+    .img__lrg{
+        width: 100px;
+        background-color: rgba(76, 163, 239, 0.638);
+        text-align: center;
+        height: 100px;
+    }
+
+    .content{
+        width: 200px;
+        height: 100px;
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 26px;
+        padding: 0 0 5px 5px
+    }
+
+    .desc{
+        padding: 0 0 0 5px;
+    }
+}
+@media only screen and (min-width : 1025px) {
+    .section{
+        width: 99%;
+        margin: 8px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .img__sml{
+        width: 200px;
+        background-color: rgba(76, 163, 239, 0.638);
+        text-align: center;
+        height: 200px;
+        margin: 8px 8px 8px 0;
+        border-radius: 20px;
+    }
+
+    .img__sml-span{
+        display: inline-block;
+        margin: 90px auto;
+    }
+
+    .img__lrg-span{
+        display: inline-block;
+        margin: 90px auto;
+    }
+
+    .wrap__content{
+        display: flex;
+        flex-grow: 1;
+        border-bottom: 1px solid black;
+        margin: 0 10px 10px 10px;
+    }
+
+    .img__lrg{
+        width: 200px;
+        background-color: rgba(76, 163, 239, 0.638);
+        text-align: center;
+        height: 200px;
+    }
+
+    .content{
+        width: 200px;
+        height: 100px;
+        flex-grow: 1;
+    }
+
+    .title{
+        font-weight: bold;
+        font-size: 32px;
+        padding: 0 0 15px 15px
+    }
+
+    .desc{
+        padding: 0 0 0 15px;
+    }
+}

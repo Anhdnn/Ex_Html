@@ -1,0 +1,120 @@
+@media screen and (min-width: 768px) {
+    header {
+        display: block;
+    }
+    body {
+        text-align: center;
+    }
+    .layer {
+        display: flex;
+        width: 100%;
+    }
+    .logo {
+        width: 33%;
+        padding: 20px 0 20px 0;
+        background-color: skyblue;
+    }
+    .temp-name {
+        width: 34%;
+        padding: 20px 0 20px 0;
+        background-color: sandybrown;
+    }
+    .act-btn {
+        width: 33%;
+        padding: 20px 0 20px 0;
+        background-color: lightyellow;
+    }
+    .menu {
+        width: 67%;
+        padding: 20px 0 20px 0;
+        background-color: lightgreen;
+    }
+    .search {
+        width: 33%;
+        padding: 20px 0 20px 0;
+        background-color: skyblue;
+    }
+    .banner {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        background-color: plum;
+    }
+    .main {
+        display: flex;
+        width: 100%;
+    }
+    .sidebar-left {
+        width: 20%;
+        padding: 300px 0 300px 0;
+        background-color: gainsboro;
+    }
+    .main-content {
+        width: 60%;
+        padding: 300px 0 300px 0;
+        background-color: lightyellow;
+    }
+    .sidebar-right {
+        width: 20%;
+        padding: 300px 0 300px 0;
+        background-color: gainsboro;
+    }
+    .footer {
+        padding: 40px 0 40px 0;
+        background-color: tomato;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: block;
+    }
+    body {
+        text-align: center;
+    }
+    .layer {
+        display: block;
+    }
+    .logo {
+        padding: 10px 0 10px 0;
+        background-color: skyblue;
+    }
+    .temp-name {
+        padding: 10px 0 10px 0;
+        background-color: sandybrown;
+    }
+    .act-btn {
+        padding: 10px 0 10px 0;
+        background-color: lightyellow;
+    }
+    .menu {
+        padding: 10px 0 10px 0;
+        background-color: lightgreen;
+    }
+    .search {
+        padding: 10px 0 10px 0;
+        background-color: skyblue;
+    }
+    .banner {
+        padding: 10px 0 10px 0;
+        background-color: plum;
+    }
+    .main {
+        display: block;
+    }
+    .sidebar-left {
+        padding: 10px 0 175px 0;
+        background-color: gainsboro;
+    }
+    .main-content {
+        padding: 10px 0 175px 0;
+        background-color: lightyellow;
+    }
+    .sidebar-right {
+        padding: 10px 0 175px 0;
+        background-color: gainsboro;
+    }
+    .footer {
+        padding: 10px 0 10px 0;
+        background-color: tomato;
+    }
+}
