@@ -1,41 +1,54 @@
 * {
     font-family:'Times New Roman', Times, serif;
     background-color: #f4f4f4;
-
+    box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #ca2525;
+html {
+    font-size: 62.5%;
+    background-color: #f4f4f4;
 }
+
 input, textarea, select {
+    outline: none;
     border: 1px solid #ccc;
+    padding: 8px 10px;
     border-radius: 4px;
     font-size: 16px;
     color: #847373;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
 }
+
 .wrap {
     width: 65%;
     margin: 0 auto;
 }
-label {
-    font-size: 20px;
-    color: #847373;
+
+.main {
+    font-size: 1.8rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #ca2525;
 }
 
 form {
     display: flex;
     flex-direction: column;
 }
+
 form > div {
     margin-bottom: 20px;
 }
+
+label {
+    font-weight: 600;
+    color: #847373;
+}
+
 .name {
     display: flex;
     justify-content: space-between;
@@ -57,6 +70,15 @@ form > div {
     display: flex;
     max-width: 80%;
 }
+
+input[type=radio], input[type=checkox] {
+    margin-right: 5px;
+}
+
+.sex label[for=male] {
+    margin-right: 20px;
+}
+
 .password,
 .confirm,
 .email,
@@ -64,7 +86,9 @@ form > div {
 .date {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .wrap__date {
     flex: 1;
@@ -80,10 +104,18 @@ form > div {
     border: 1px solid #ccc;
     margin-right: 10px;
 }
+
+.day i, .month i, .year i {
+    margin-right: 10px;
+}
+
 .day select, .month select, .year select {
     width: 100%;
+    padding: 8px 10px;
     border: none;
+    /* background-color: white; */
 }
+
 .password input,
 .confirm input,
 .email input,
@@ -92,6 +124,11 @@ form > div {
     max-width: 80%;
     border: 1px solid #ccc;
 }
+
+.message {
+    align-items: unset;
+}
+
 .accept {
     max-width: 80%;
     margin-left: auto;
@@ -114,7 +151,36 @@ form > div {
     border: none;
     border-radius: 4px;
 }
-@media only screen and (min-width : 320px) and (max-device-width : 480px) {
+
+@media (max-width: 1266px) {
+    .wrap {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrap {
+        width: 90%;
+    }
+}
+
+@media (max-width: 860px) {
+    .name input, .sex > div, .wrap__date, 
+    .accept, .password input, .confirm input,
+    .email input, .message textarea{
+        max-width: 60%;
+    }
+
+    .day, .month, .year {
+        width: 100%;
+    }
+    
+    .year {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 580px) {
     .main {
         overflow-y: unset;
     }
@@ -132,8 +198,9 @@ form > div {
         width: 100%;
     }
     
+    
     .wrap__date {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .day, .month, .year {
@@ -143,10 +210,9 @@ form > div {
     .sex div label{
         margin-bottom: 0;
     }
-}
-@media only screen and (min-width : 480px) and (max-device-width : 1025px) {
-    .wrap {
-        width: 80%;
-    }
-}
 
+    label {
+        margin-bottom: 8px;
+    }
+
+}

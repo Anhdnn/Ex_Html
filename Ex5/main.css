@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
 }
-@media only screen and (min-width: 600px) and (max-device-width: 768px) {
+@media  screen and  (max-width: 767px) {
   .main {
     width: 100vw;
     height: 100vh;
@@ -124,7 +124,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media  screen and (min-width: 767px) {
     .main {
         width: 100vw;
         height: 100vh;

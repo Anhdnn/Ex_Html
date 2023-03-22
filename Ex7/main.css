@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-device-width: 480px) {
+@media screen and (max-width: 767px)  {
   .section {
     width: 95%;
     border-radius: 2px;
@@ -56,7 +56,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-device-width: 768px) {
+@media screen and (min-width: 768px)  and (max-width: 1023px)  {
   .section {
     width: 95%;
     border-radius: 2px;
@@ -92,7 +92,10 @@
     margin-bottom: 8px;
     height: 100px;
     width: 78%;
-    
+  }
+
+  .aside{
+    width: 18%;
   }
 
   .aside_sidebar,
@@ -131,7 +134,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media  screen and (min-width: 1024px) {
     .section {
         width: 99%;
         border-radius: 2px;
